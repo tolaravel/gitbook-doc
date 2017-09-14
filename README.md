@@ -23,4 +23,4 @@ Check out the [GitBook Community Slack Channel](https://slack.gitbook.com), Stay
 
 ### 参考例子
 
-[GitBook的一些资源](http://gitbook.zhangjikai.com/)
+[GitBook的一些资源](https://github.com/zhangjikai/gitbook-use/)
