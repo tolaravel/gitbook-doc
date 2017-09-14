@@ -66,16 +66,17 @@ GitBook 用`SUMMARY.md`文件去定义书的章节和目录. 这个`SUMMARY.md` 
 
 部分只是章节的一组，没有专门的页面，但是根据主题，它将在导航中显示。
 
-### Pages
+### 页面
 
-#### Markdown syntax
+#### Markdown 语法
 
-Most of the files for GitBook use the Markdown syntax by default. GitBook infers your pages's structure from it. The syntax used is similar to the [GitHub Flavored Markdown syntax](https://guides.github.com/features/mastering-markdown/). One can also opt for the [AsciiDoc syntax](asciidoc.md).
+很多gibook的文件默认用markdown语法,gitbook从它推断你的页面结构.语法和[github markdown语法](https://guides.github.com/features/mastering-markdown/)相似.你也可以选择[AsciiDoc 语法](asciidoc.md).
 
-##### Example of a chapter file
+
+##### 章节文件的例子
 
 ``` markdown
-# Title of the chapter
+# 章节的标题
 
 This is a great introduction.
 
@@ -91,7 +92,8 @@ Markdown will dictates _most_ of your **book's structure**
 
 #### 扉页
 
-Pages can contain an optional front matter. It can be used to define the page's description. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:
+页面可以包含一个可选的扉页。它可以用来定义页面的描述。前面的事情必须是文件中的第一件事，并且必须在三行线之间设置有效的YAML格式。
+这是一个基本的例子:
 
 ```yaml
 ---
