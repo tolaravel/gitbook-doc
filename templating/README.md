@@ -1,31 +1,31 @@
-# Templating
+# 模板
 
-GitBook uses the [Nunjucks templating language](https://mozilla.github.io/nunjucks/) to process pages and theme's templates.
+GitBook uses the [Nunjucks templating language](https://mozilla.github.io/nunjucks/) 处理页面和主题的模板.
 
 The Nunjucks syntax is very similar to **Jinja2** or **Liquid**. Its syntax uses surrounding braces `{ }` to mark content that needs to be processed.
 
-### Variables
+### 变量
 
-A variable looks up a value from the template context. If you wanted to simply display a variable, you would use the `{{ variable }}` syntax. For example :
+一个变量从模板内容中查找值. 如果你想简单地显示一个变量, 您将使用 `{{ variable }}` 语法. For example :
 
 ```twig
 My name is {{ name }}, nice to meet you
 ```
 
-This looks up username from the context and displays it. Variable names can have dots in them which lookup properties, just like JavaScript. You can also use the square bracket syntax.
+它从内容中查找用户名并显示它. 变量名可以在其中包含点，查找属性, 就像 JavaScript. 还可以使用方括号语法.
 
 ```twig
 {{ foo.bar }}
 {{ foo["bar"] }}
 ```
 
-If a value is undefined, nothing is displayed. The following all output nothing if foo is undefined: `{{ foo }}`, `{{ foo.bar }}`, `{{ foo.bar.baz }}`.
+如果一个值没有定义, 什么也不显示. 如果foo没有定义，下面所有输出都不会输出: `{{ foo }}`, `{{ foo.bar }}`, `{{ foo.bar.baz }}`.
 
-GitBook provides a set of [predefined  variables](variables.md) from the context.
+GitBook 提供了一组 [预先变量](variables.md) 从内容里.
 
-### Filters
+### 过滤
 
-Filters are essentially functions that can be applied to variables. They are called with a pipe operator (`|`) and can take arguments.
+过滤器本质上是可以应用于变量的函数. 它们被称为管道操作符 (`|`) 和可以带参数.
 
 ```twig
 {{ foo | title }}
