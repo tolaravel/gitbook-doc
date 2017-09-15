@@ -1,14 +1,16 @@
-# Create and publish a plugin
+# 创建并发布一个插件
 
-A GitBook plugin is a node package published on NPM that follow a defined convention.
+GitBook插件是在NPM上发布的一个节点包，它遵循一个已定义的约定.
 
-## Structure
+## 结构
 
 #### package.json
+`package.json`是描述 **Node.js modules** 的一种显示格式.GitBook插件是建立在node模块之上的.它声明了在GitBook中运行插件所需的依赖、版本、所有权和其他信息。 该文档详细描述了模式
 
-The `package.json` is a manifest format for describing **Node.js modules**. GitBook plugins are built on top of Node modules. It declares dependencies, version, ownership, and other information required to run a plugin in GitBook. This document describes the schema in detail.
 
 A plugin manifest `package.json` can also contain details about the required configuration. The configuration schema is defined in the `gitbook` field of the `package.json` (This field follow the [JSON-Schema](http://json-schema.org) guidelines):
+
+一个插件清单定义的 `package.json` 还可以包含所需配置的详细信息。配置模式在`package.json`的`gitbook`字段中定义 (此字段遵循[JSON 模式](http://json-schema.org)指导原则):
 
 ```js
 {
@@ -30,13 +32,13 @@ A plugin manifest `package.json` can also contain details about the required con
 }
 ```
 
-You can learn more about `package.json` from the [NPM documentation](https://docs.npmjs.com/files/package.json).
+你可以学到更多关于  `package.json` 从 [NPM documentation](https://docs.npmjs.com/files/package.json).
 
-The **package name** must begin with `gitbook-plugin-` and the **package engines** should contains `gitbook`.
+这个 **package name** 必须以 `gitbook-plugin-` 开始 , 这个 **package engines** 应该包含 `gitbook`.
 
 #### index.js
 
-The `index.js` is main entry point of your plugin runtime:
+这个 `index.js` 是你的插件运行时的主要入口点:
 
 ```js
 module.exports = {
@@ -51,19 +53,19 @@ module.exports = {
 };
 ```
 
-## Publish your plugin
+## 发布您的插件
 
-GitBook plugins can be published on [NPM](https://www.npmjs.com).
+GitBook插件可以发布到 [NPM](https://www.npmjs.com).
 
-To publish a new plugin, you need to create an account on [npmjs.com](https://www.npmjs.com) then publish it from the command line:
+发布一个新插件, 你需要创建一个帐户 [npmjs.com](https://www.npmjs.com) 然后从命令行发布它:
 
 ```
 $ npm publish
 ```
 
-## Private plugins
+## 私人的插件
 
-Private plugins can be hosted on GitHub and included using `git` urls:
+可以在GitHub上托管私有插件，并使用git url:
 
 ```
 {

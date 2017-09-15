@@ -14,6 +14,10 @@
 * [AsciiDoc](syntax/asciidoc.md)
 * [电子书和PDF](ebook.md)
 
+##基本使用
+ * [命令](commands.md)
+ * [插件列表](plugins.md)
+
 ## 可定制
 * [模版](templating/README.md)
     * [内容的引用](templating/conrefs.md)
