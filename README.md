@@ -10,9 +10,20 @@ GitBook可以将你的内容作为一个网站输出 ([可定制](themes/README.
 
 GitBook.com是利用GitBook格式创建和托管图书的在线平台。 它提供托管，协作特性 和一个简单易用的 editor.
 
-### 帮助和支持
+### 内容相关
+* [安装及设置](setup.md)
+* [目录结构](structure.md)
+* [页面及总结](pages.md)
+* [配置](config.md)
+* [术语](lexicon.md)
+* [多语言](languages.md)
+* [Markdown](syntax/markdown.md)  
+* [AsciiDoc](syntax/asciidoc.md)
+* [电子书和PDF](ebook.md)
 
-我们总是很乐意帮助你解决你的书或者其他你可能有的问题. 你可以在以下的联系方式上问一个问题 [gitbook.com/contact](https://www.gitbook.com/contact) or [GitHub](https://github.com/GitbookIO/gitbook).
+### 基本使用
+ * [命令](commands.md)
+ * [插件列表](plugins.md)
 
 ### 常见问题
 
