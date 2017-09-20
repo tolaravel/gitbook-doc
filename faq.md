@@ -1,14 +1,14 @@
-# GitBook FAQ
+# GitBook 常见问题
 
-This page gathers common questions and answers concerning the GitBook format and toolchain.
+这个页面收集了关于GitBook格式和工具链的常见问题和答案
 
-Questions about GitBook.com and the Editor are gather into the [help.gitbook.com's FAQ](http://help.gitbook.com/faq.html).
+关于GitBook.com和编辑器的问题被收集到 [help.gitbook.com's FAQ](http://help.gitbook.com/faq.html).
 
-#### How can I host/publish my book?
+#### 怎样才能把我的书 host/publish?
 
-Books can easily be published and hosted on [GitBook.com](https://www.gitbook.com). But GitBook output can be hosted on any static file hosting solution.
+书籍可以很容易地出版在 [GitBook.com](https://www.gitbook.com). 但是GitBook输出可以托管在任何静态文件托管解决方案中.
 
-#### What can I use to edit my content?
+#### 我能用什么来编辑我的内容?
 
 Any text editor should work! But we advise using the [GitBook Editor](https://www.gitbook.com/editor). [GitBook.com](https://www.gitbook.com) also provides a web version of this editor.
 
@@ -25,7 +25,7 @@ The GitBook format supports right to left, and bi-directional writing. To enable
 }
 ```
 
-With version 3.0 of GitBook, it's automatically detected according to the content.
+With version 3.0 of GitBook, 它会根据内容自动检测到.
 _Note that, while the output book will indeed respect RTL, the Editor doesn't support RTL writing yet_.
 
 #### Should I use an `.html` or `.md` extensions in my links?

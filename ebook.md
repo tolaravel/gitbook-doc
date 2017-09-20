@@ -1,21 +1,21 @@
-# Generating eBooks and PDFs
+# 生成 eBooks and PDFs
 
-GitBook can generates a website, but can also output content as ebook (ePub, Mobi, PDF).
+GitBook 能生成一个网站, 同时也能生成电子书 (ePub, Mobi, PDF).
 
 ```
-# Generate a PDF file
+# 生成 a PDF file
 $ gitbook pdf ./ ./mybook.pdf
 
-# Generate an ePub file
+# 生成 an ePub file
 $ gitbook epub ./ ./mybook.epub
 
 # Generate a Mobi file
 $ gitbook mobi ./ ./mybook.mobi
 ```
 
-### Installing ebook-convert
+### 安装 ebook-convert
 
-`ebook-convert` is required to generate ebooks (epub, mobi, pdf).
+`ebook-convert` 是生成电子书必备的 (epub, mobi, pdf).
 
 ##### OS X
 
@@ -27,15 +27,15 @@ $ sudo ln -s ~/Applications/calibre.app/Contents/MacOS/ebook-convert /usr/bin
 
 You can replace `/usr/bin` with any directory that is in your $PATH.
 
-### Cover
+### Cover 封面图片
 
-Covers are used for all the ebook formats. You can either provide one yourself, or generate one using the [autocover plugin](https://plugins.gitbook.com/plugin/autocover).
+Covers 被用于所有电子书格式. 你可以自己制作, 或 用 [autocover plugin](https://plugins.gitbook.com/plugin/autocover)来生成一个.
 
-To provide a cover, place a **`cover.jpg`** file at the root directory of your book. Adding a **`cover_small.jpg`** will specify a smaller version of the cover. The cover should be a **JPEG** file.
+提供的封面,命名为 **`cover.jpg`** 的文件在书的根目录.  **`cover_small.jpg`** 是小尺寸的封面. 这个封面必须是 **JPEG** 文件
 
-A good cover should respect the following guidelines:
+一个好的封面应该尊重以下的指导方针:
 
-* Size of 1800x2360 pixels for `cover.jpg`, 200x262 for `cover_small.jpg`
-* No border
-* Clearly visible book title
-* Any important text should be visible in the small version
+* 尺寸: 1800x2360 pixels for `cover.jpg`, 200x262 for `cover_small.jpg`
+* 无边框
+* 清晰可见书名
+* 任何重要的文本都应该在小尺寸版本中可见
