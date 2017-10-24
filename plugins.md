@@ -184,7 +184,7 @@ editor.renderer.updateFontSize();
 ```
 使用示例:
 
-{%ace edit=true, lang='c_cpp'%}
+```
 // This is a hello world program for C.
 #include <stdio.h>
 
@@ -192,7 +192,9 @@ int main(){
   printf("Hello World!");
   return 1;
 }
-{%endace%}
+```
+
+
 
 ## Emphasize
 为文字加上底色
@@ -205,15 +207,15 @@ int main(){
 ```
 使用示例:
 
-This text is {% em %}highlighted !{% endem %}
+This text is `highlighted `!
 
-This text is {% em %}highlighted with **markdown**!{% endem %}
+This text is `highlighted with **markdown**`!
 
-This text is {% em type="green" %}highlighted in green!{% endem %}
+This text is `highlighted in green`!
 
-This text is {% em type="red" %}highlighted in red!{% endem %}
+This text is `highlighted in red`!
 
-This text is {% em color="#ff0000" %}highlighted with a custom color!{% endem %}
+This text is `highlighted with a custom color`!
 
 ## KaTex
 为了支持数学公式, 我们可以使用`KaTex`和`MathJax`插件, 官网上说`Katex`速度要快于`MathJax`
@@ -279,13 +281,13 @@ $$
 ]
 ```
 使用示例:
-{% mermaid %}
-graph TD;
+
+```graph TD;
   A-->B;
   A-->C;
   B-->D;
-  C-->D;
-{% endmermaid %}
+  C-->D;```
+
 
 ## Sharing
 分享当前页面, gitbook的默认插件, 使用下面方式来禁用

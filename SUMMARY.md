@@ -16,7 +16,6 @@
 
 ##基本使用
  * [命令](commands.md)
- * [插件列表](plugins.md)
 
 ## 可定制
 * [模版](templating/README.md)
